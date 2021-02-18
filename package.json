@@ -1,0 +1,32 @@
+{
+  "name": "chi",
+  "version": "1.0.0",
+  "description": "Bot whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yusakha/Chi.git"
+  },
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "bot-whatsapp",
+    "whatsapp-bot"
+  ],
+  "author": "Yusakha",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Yusakha/Chi/issues"
+  },
+  "homepage": "https://github.com/Yusakha/Chi#readme",
+  "dependencies": {
+    "@open-wa/wa-automate": "^3.1.16",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "moment-timezone": "^0.5.33",
+    "update-json-file": "^1.1.1"
+  }
+}
