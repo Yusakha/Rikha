@@ -2,6 +2,7 @@ const { create, Client } = require('@open-wa/wa-automate')
 const { color, messageLog } = require('./etc/func.js')
 const msgHandler = require('./msgHandler.js')
 
+ 
 const start = async (client = new Client()) => {
     console.log('[DEV]', color('Yusakha', 'yellow'))
     console.log('[CLIENT] CLIENT Started!')
@@ -10,10 +11,7 @@ const start = async (client = new Client()) => {
     client.onAnyMessage((fn) => messageLog(fn.fromMe, fn.type))
 
     // Set all received message to seen
-    client.onAck((x => {
-        const { to } = x
-        if (x !== 3) client.sendSeen(to)
-    }))
+    //???
 
     // Force it to keep the current session
     client.onStateChanged((state) => {
@@ -39,7 +37,7 @@ const start = async (client = new Client()) => {
                 //     client.sendText(id, 'Sorry, the minimum group member is 10 user to use this bot. Bye~').then(() => client.leaveGroup(id))
                 // }
                 // if {
-                    client.sendText(id, `Hallo para penghuni *${name}*, terimakasih telah menggunakan bot Chi, kamu bisa melihat menu di *!menu*`)
+                    client.sendText(id, `Hallo para penghuni grup *${name}*, terimakasih telah menggunakan bot Chi, kamu bisa melihat menu di *#menu*`)
                 // }
             }))
 
