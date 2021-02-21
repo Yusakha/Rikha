@@ -37,7 +37,7 @@ const addFilter = (from) => {
     usedCommandRecently.add(from)
     setTimeout(() => {
         return usedCommandRecently.delete(from)
-    }, 5000) // 5sec is delay before processing next command
+    }, 3000) // 5sec is delay before processing next command
 }
 
 // Message type Log
