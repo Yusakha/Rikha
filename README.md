@@ -27,15 +27,43 @@ Whatsapp bot made by Yusakha
 
 ## Features
 
-| Sticker Creator |                Feature           |
+| Sticker Creator |              Feature             |
 | :-----------: | :--------------------------------: |
-|       ✅       | Send Photo with Caption          |
-|       ✅       | Reply A Photo                    |
+|       ✅      | Send Photo                       |
+|       ✅      | Reply a Photo                    |
+|       ✅      | Image Url                        |
+|       ✅      | Send Video or GIF                |
+|       ✅      | Send Photo with Text             |
 
+|     Other     |                Feature             |
+| :-----------: | :--------------------------------: |
+|       ✅      | Make Meme                         |
+|       ✅      | Convert Sticker to Image          |
+|       ✅      | Get a random images               |
+|       ✅      | Repeat a Message                  |
+|       ✅      | Delete chat Bot                   |
+|       ✅      | Copypasta                         |
+|       ✅      | Repeat a Message to Owner         |
+
+|     Group     |                Feature             |
+| :-----------: | :--------------------------------: |
+|       ✅      | Add                              |
+|       ✅      | Kick                             |
+|       ✅      | Promote                          |
+|       ✅      | Demote                           |
+|       ✅      | Tag with Text                    |
+
+|     Owner     |                Feature             |
+| :-----------: | :--------------------------------: |
+|       ✅      | Broadcast                        |
+|       ✅      | Send Message to Someone          |
+|       ✅      | Leave All                        |
+|       ✅      | Clear All                        |
 
 ### Special Thanks to
 * [`open-wa/wa-automate-nodejs`](https://github.com/open-wa/wa-automate-nodejs)
 * [`YogaSakti/imageToSticker`](https://github.com/YogaSakti/imageToSticker)
+* [`MhankBarBar/whatsapp-bot`](https://github.com/MhankBarBar/whatsapp-bot)
 
 ### Donate
 * [`Trakteer`](https://trakteer.id/Yusakha)
