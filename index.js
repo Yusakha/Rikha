@@ -1,5 +1,5 @@
 const { create, Client } = require('@open-wa/wa-automate')
-const { color, messageLog } = require('./etc/func.js')
+const { color } = require('./etc/func.js')
 const msgHandler = require('./msgHandler.js')
 
  
@@ -8,10 +8,9 @@ const start = async (client = new Client()) => {
     console.log('[CLIENT] CLIENT Started!')
 
     // Message log for analytic
-    client.onAnyMessage((fn) => messageLog(fn.fromMe, fn.type))
+    // client.onAnyMessage((fn) => messageLog(fn.fromMe, fn.type))
 
     // Set all received message to seen
-    //???
 
     // Force it to keep the current session
     client.onStateChanged((state) => {
@@ -32,13 +31,14 @@ const start = async (client = new Client()) => {
         client.getGroupMembersId(id)
             .then((ids) => {
                 console.log('[CLIENT]', color(`Invited to Group. [ ${name} => ${ids.length}]`, 'yellow'))
+                const minim = 10
                 // conditions if the group members are less than 10 then the bot will leave the group
-                // if (ids.length <= 10) {
-                //     client.sendText(id, 'Sorry, the minimum group member is 10 user to use this bot. Bye~').then(() => client.leaveGroup(id))
-                // }
-                // if {
-                    client.sendText(id, `Hallo para penghuni grup *${name}*, terimakasih telah menggunakan bot Chi, kamu bisa melihat menu di *#menu*`)
-                // }
+                if (ids.length <= minim) {
+                    client.sendText(id, `Maaf, minimal penghuni grup ${minim} orang. Bye~`).then(() => client.leaveGroup(id))
+                }
+                else {
+                    client.sendText(id, `Hallo para penghuni grup *${name}*, terimakasih telah menggunakan bot Rikha, kamu bisa melihat menu di *!menu*`)
+                }
             }))
 
     // listening on Incoming Call
@@ -50,6 +50,7 @@ const start = async (client = new Client()) => {
 
 const options = {
     sessionId: 'Yusakha',
+    useChrome: true,
     headless: true,
     qrTimeout: 0,
     authTimeout: 0,
