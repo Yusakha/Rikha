@@ -40,12 +40,6 @@ const addFilter = (from) => {
     }, 3000) // 5sec is delay before processing next command
 }
 
-// Message type Log
-const messageLog = (fromMe, type) => updateJson('utils/stat.json', (data) => {
-    (fromMe) ? (data.sent[type]) ? data.sent[type] += 1 : data.sent[type] = 1 : (data.receive[type]) ? data.receive[type] += 1 : data.receive[type] = 1
-    return data
-})
-
 module.exports = {
     msgFilter: {
         isFiltered,
@@ -57,6 +51,5 @@ module.exports = {
         Giphy,
         MediaGiphy
     },
-    color,
-    messageLog
+    color
 }
