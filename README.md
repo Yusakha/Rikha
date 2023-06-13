@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://www.pixiv.net/en/artworks/85625158">
-<img src="https://raw.githubusercontent.com/Yusakha/Rikha/master/media/images/Rikha.png" width="128" height="128"></a>
+<img src="https://raw.githubusercontent.com/Yusakha/Rikha/master/media/images/rikha.png" width="128" height="128"></a>
 </p>
 <p align="center">
 <a href="#"><img title="Whatsapp-Bot" src="https://img.shields.io/badge/Whatsapp Bot-green?colorA=%23ff0000&amp;colorB=%23017e40&amp;style=for-the-badge"></a>
